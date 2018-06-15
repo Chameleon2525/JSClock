@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carl Mills CV</title>
+	<meta name="Curriculum Vitae for Carl Mills" content="">
+	<meta name="keywords" content="">
+	<meta name="Carl Mills" content="">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <!-- css -->
+  <link href = "Styles/index.css" rel = "stylesheet">
+  <link href = "Styles/Clock.css" rel = "stylesheet">
+  <script src="https://use.fontawesome.com/a3a009cd80.js"></script>
+
+  
+</head>
+<div class="body__wrapper">
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+       <div class = "container">
+       <div class="brand__container">
+          <a class="navbar-brand" href="index.html" >Curriculum Vitae</a>
+       </div>
+       <a class =  "navbar__icons" href = "https://www.linkedin.com/in/carl-mills-8a3b3ba8/" target ="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+       <a class =  "navbar__icons"  href = "https://github.com/Chameleon2525" target ="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+       <a class =  "navbar__icons"  href = "https://digitaldevel.wordpress.com" target ="_blank"><i class="fa fa-wordpress" aria-hidden="true"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Education</a>
+            </li>
+           <li class="nav-item active">
+              <a class="nav-link" href="webdev.html">Web Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Work Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Creative Projects
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="music.html">Music</a>
+                <a class="dropdown-item" href="animation.html">Animation</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main" role="main">
+
+      <div class="Container--center">  
+          <hr>
+          <div class = "Webdev__text">This site is currently the best working example of my web design & development skills. For more information on my theoretical knowledge, please refer to my Wordpress blog via the navbar link. Feel free to inspect the pages to gain a better understanding of my process. Below are some JavaScript web applications that I've developed, I plan to add more as my studies continue. I will be continuously upgrading this site and create new sites/web applications & modelling tools as my skills progress. Below is a comprehensive list of programming languages & techniques I am confident in, areas I'm working on and an overview of my background and aims</div>
+          <hr>
+      </div>
+
+      <div class="Webdev__title">Web Applications</div>
+
+      <div class="align" style = "text-align: center; margin: 60px 0px;">
+          <a class="Webdev__applink" href = "ToDoList.html"><i style = "color:black" class="fa fa-check-circle-o Webdev__icon" aria-hidden="true"></i>To Do List</a>
+          <div class="Webdev__text">The To Do List is a JavaScript application that was designed and constructed using Google Chrome's developer tools and Microsoft Visual Studio Code. It utilises a MVC framework by separating the data, display and user interaction into clearly defined components.</div>
+        
+ 
+         
+            <a class = "Webdev__applink" href = "https://tictactoereactapp.herokuapp.com/"><i style = "color: black" class="fa fa-th Webdev__icon" aria-hidden="true"></i>Tic Tac Toe</a>
+            <div class="Webdev__text">This is a React app that I constructed following the tutorial on the React website. It clearly outlined the tools and syntax of React, which included <em>render</em>, <em>React.component</em> & <em>extends</em>. For more information on my understanding of React, please refer to my Wordpress where I have a blog post on the subject. </div>
+
+            <a class="Webdev__applink" href = "JSDrumkit.html"><i style = "color:black" class="fa fa-music Webdev__icon" aria-hidden="true"></i>Keyboard Drum Kit *WIP*<br>(currently Google Chrome only)</a>
+            <div class="Webdev__text">This drum pad was created using embedded Javascript to allow users to trigger percussion elements using certain keys. This incorporates event listeners to trigger a sample and manipulate the style of the key's div container by temporarily adding a new class. I've incorporated the Web Audio API to form a visualiser of the audio waveform by utilising the analyser function. Each time a key is triggered, The HTML media element source is altered to the audio element that corresponds to that keycode.I'm intending to add audio FX to this page such as reverb and delay that can be controlled by the user.</div>
+
+            <a class="Webdev__applink" href = "#">JS Clock</a>
+
+            <div class="controller">
+
+                    <input id="opacity" type="range" name="opacity" step = "0.1" min="0" max="1" value="1">
+                    <!-- <label for="opacity">Opacity:</label> -->
+                 </div>
+            <div class="clock">
+                <div class="clock-face">
+                  <div class="hand hour-hand"></div>
+                  <div class="hand min-hand"></div>
+                  <div class="hand second-hand" style = "transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);"></div>
+                </div>
+            </div>
+                <div class="controller">
+                    
+                    <input id="invert" type="range" step="2" name="invert" min="0" max="100" value="0" data-sizing="%"> <!--px suffix to be added to new sepia value-->
+                </div>
+                <div class="controller">              
+                        <input id="base" type="color" name="base" value="#744B16">
+                    </div>
+            <div class="Webdev__text">This simple application operates on the rotation of separate div's that represent each clock hand. There is one function named setDate(),
+                which is set to run every second by using JavaScript's setInterval() function. setDate() collects the time by constructing a Javascript Date object and assigning variables for the second, minute and hour values.
+                With a simple calculation these values are converted to degrees, which are then passed on to alter the 'transform: rotate(<em><strong>X</strong> deg</em>)' value within Clock.css.
+                 A cubic-bezier transition has also been added to the second hand to imitate the slight snapback seen as a second hand ticks to its next position.<br>
+                I've appended some CSS functionality on to this little application. I first defined certain properties (opacity, invert & border color) using CSS variables, then wrote a simple JavaScript function. The script initially listens out for changes/mouse movement across all inputs.
+                When a change is detected, the new value is updated and the relevant suffix is added on by obtaining this from a dataset value attached to the HTML input element e.g. &lt;input data-sizing = "%"&gt; for percentage.
+                In the spirit of Salvador Dali it seemed like the best object to use for experimentation!</div>
+       </div>
+      <hr>
+
+      <div class="Webdev__title">Languages, Libraries & Software</div>
+      <div class="row">
+        <div class="col-sm-4">
+          <p class = "BP p--big">•	HTML5</p>
+        </div>
+        <div class="col-sm-4">
+          <p class = "BP p--big">•	JavaScript</p>
+        </div>
+        <div class="col-sm-4">          
+          <p class = "BP p--big">•	Matlab</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+            <p class = "BP p--big">•	Python (SciPy/NumPy Libraries)</p>
+        </div>
+        <div class="col-sm-4">
+            <p class = "BP p--big">•	C++</p>
+        </div>
+        <div class="col-sm-4">          
+            <p class = "BP p--big">•	Adobe Photoshop CS6</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+            <p class = "BP p--big">•	AU/VST/MIDI</p>
+        </div>
+        <div class="col-sm-4">
+            <p class = "BP p--big">•	Bootstrap 3/4</p> 
+        </div>
+        <div class="col-sm-4">          
+            <p class = "BP p--big">•	Visual Studio Code</p>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Basic jQuery</p>
+          </div>
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Basic SQL</p>
+          </div>
+          <div class="col-sm-4">          
+              <p class = "BP p--big">•	CSS3</p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Basic React & Node.js</p>
+          </div>
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Gits & GitHub</p>
+          </div>
+          <div class="col-sm-4">          
+              <p class = "BP p--big">•	Wordpress</p>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+            <p class = "BP p--big">•	Sass/Less</p>
+        </div>
+    </div>
+
+      <hr>
+
+      <div class="Webdev__title">Coding Methodologies & Techniques</div>  
+
+      <div class="row">
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	If/Else Statements</p>
+          </div>
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Switch</p>
+          </div>
+          <div class="col-sm-4">          
+              <p class = "BP p--big">•	For & While loops</p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Multi-dimensional Arrays</p>
+          </div>
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	jQuery Application within HTML</p> 
+          </div>
+          <div class="col-sm-4">          
+              <p class = "BP p--big">•	WAV file read/write</p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Digital Signal Processing</p>
+          </div>
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Comparison Operators</p>
+          </div>
+          <div class="col-sm-4">          
+              <p class = "BP p--big">•	Audio Buffers</p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	JS Array Functions</p>
+          </div>
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Panning, Delay & Reverb Plugins</p>
+          </div>
+          <div class="col-sm-4">          
+              <p class = "BP p--big">•	JS String Functions</p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	MIDI read/write</p>
+          </div>
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	Programming Microcontrollers</p>
+          </div>
+          <div class="col-sm-4">          
+              <p class = "BP p--big">•	Bitmap File Creation</p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-4">   
+              <p class = "BP p--big">•	Audio Convolution using Impulse Responses Measurements</p>         
+          </div>
+          <div class="col-sm-4">                 
+              <p class = "BP p--big">•	BEM/ITCSS Methodologies</p>
+          </div>
+          <div class="col-sm-4">
+            <p class = "BP p--big">•	The importance of maintaining immutability</p>
+          </div>
+      </div>
+
+      <hr>
+
+      
+      <div class="Webdev__title">Areas Under Development</div>  
+      
+      <div class="row">
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	JSON/API Theory</p>
+          </div>
+          <div class="col-sm-4">          
+              <p class = "BP p--big">•	Wordpress</p>
+          </div>
+          <div class="col-sm-4">
+            <p class = "BP p--big">•	C#/.NET</p>
+            </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	XML</p>
+          </div>
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	SQL</p>
+          </div>
+          <div class="col-sm-4">
+              <p class = "BP p--big">•	PHP</p>
+          </div>
+      </div>
+
+
+
+
+
+        
+      <hr>
+
+      <div class="Webdev__title">Technical Background</div> 
+      <div class = "Webdev__text">
+          <p>In university I studied modules including object-oriented programming, digital signal processing, microcontrollers and programming for windows. I predominantly used the C++ language, but also used higher-level languages in software such as Matlab and Microsoft Visual Studio. In these modules I developed audio plugins, GUI's, MIDI music editors and manipulated audio signals using algorithms I created (examples can be found on my LinkedIn page). I also had an acoustics module where I used Matlab to create algorithms for panning, normalisation and convolution. I have independently developed my programming skills in Python, using SciPy & NumPy libraries to fully understand algorithms such as searching, sorting, and shortest path. I am aware of aspects of algorithm efficiency in order to reduce factors such as memory usage, transmission speed and processing power.
+          </p>
+          <p>My web language skills have been developed through various online courses, books and independent research. I am confident with my abilities in HTML, CSS & Javascript to enter the industry as a junior front end developer. I am confident in creative design; I am proficient in Photoshop and as an artist I have a keen eye for visuals.</p>
+          <p> The whole subject of computer science fascinates me and inspires me to pursue a greater understanding. I am currently reading a book about a startup software company in San Francisco in the early 2000's. The book details the plight of the company when the dot-com bubble burst and how the CEO managed to rebuild the company despite the odds stacked against them. The level of intellect required from these engineers is incredible and I aspire to shape my own coding to the level of efficiency these developers achieved. I have also bought a book entitled 'The Pragmatic Programmer'. From what I have read so far it has been very helpful in providing a methodical approach to coding e.g. the benefits of modularisation.</p>
+      </div>
+
+      <hr>
+      <div class="Webdev__title">Musical Background</div> 
+
+      <div class="Webdev__text"><p>For an insight into my musical & creative endeavours please see the 'Creative Projects' tab. My background in music and music technology tends to draw a little skepticism with employers, and I can understand why. I'd like to assure any potential employers reading that I am equally as passionate about computing, coding and new technologies. The internet has entered humanity into an age of instant global communication that continues to bring vast opportunities and possibilities. I would very much like to become a part of developing this technology as it continues to educate and connect people across the globe.
+      <br><br>I'm looking forward to integrate my artistic nature into my web development projects. A friend of mine is currently undergoing a Phd in 3D sound localisation, and a long-term goal is to implement a streaming service for this technology.</p></div>
+      <div class="Container--center">  
+        <hr class="hr--small" style = "margin-top: 150px;">
+        <div class = "Webdev__quote"><strong>"A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyze a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialisation is for insects." <em><br><br>Robert A. Hinlein</em>, Time Enough For Love, 1973</strong></div>
+        <hr class="hr--small">
+      </div>
+    
+
+
+
+
+      <footer align = "center"><b> © website created & designed by Carl Mills using Microsoft Visual Code. All rights reserved (2018)</b></footer>
+    
+    
+      <script src="JS/Clock.js"></script>
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    </main>
+  </body>
+</div>
+</html>
